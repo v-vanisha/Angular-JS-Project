@@ -9,7 +9,7 @@
 
 <style>
      :host {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; */
         font-size: 14px;
         color: #333;
         box-sizing: border-box;
@@ -319,15 +319,15 @@
             <div class="form-group row">
                 <div class="col-xs-3">
                     <label for="ex1">Name</label>
-                    <input class="form-control" id="ex1" type="text" [(ngModel)]="inputname" [ngModelOptions]="{standalone:true}" ng-required="inputname">
+                    <input class="form-control" id="ex1" type="text" [(ngModel)]="inputname" [ngModelOptions]="{standalone:true}" required>
                 </div>
                 <div class="col-xs-3">
                     <label for="ex2">Account Number</label>
-                    <input class="form-control" id="ex2" type="text" [(ngModel)]="inputaccn" [ngModelOptions]="{standalone:true}">
+                    <input class="form-control" id="ex2" type="text" [(ngModel)]="inputaccn" [ngModelOptions]="{standalone:true}" required>
                 </div>
                 <div class="col-xs-3">
                     <label for="ex3">Balance</label>
-                    <input class="form-control" id="ex3" type="text" [(ngModel)]="inputbal" [ngModelOptions]="{standalone:true}">
+                    <input class="form-control" id="ex3" type="text" [(ngModel)]="inputbal" [ngModelOptions]="{standalone:true}" required>
                 </div>
             </div>
             <div id="outer-close">

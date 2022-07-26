@@ -1,0 +1,99 @@
+@import url('http://fonts.cdnfonts.com/css/roboto');
+#bgimg {
+    height: 100vh;
+    color: #fff;
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.5)), url("src/assets/IPL-Trophy.webp");
+    background-size: cover;
+    width: 100%;
+    margin-top: -21px;
+    position: relative;
+    /* background-color: black; */
+}
+
+.heading {
+    font-family: 'Roboto';
+    position: absolute;
+    font-size: 40px;
+    text-shadow: 1px 2px 2px #000000;
+    text-transform: uppercase!important;
+    line-height: 1.2;
+    text-align: center!important;
+    top: 25%;
+    left: 36%;
+    transform: translate(-50%, -50%);
+    /* animation-delay: 0.001s; */
+    /* visibility: visible; */
+}
+
+.heading h5 {
+    letter-spacing: 3px;
+    font-size: 1.30rem;
+    line-height: 1.2;
+    font-weight: 520;
+}
+
+.breakLine {
+    border-top: 3px solid #fff;
+    width: 110px;
+    margin-bottom: 3.3rem!important;
+    margin-top: 3.2rem!important;
+}
+
+#baseline {
+    text-align: center!important;
+    line-height: 1.2;
+    font-weight: 500;
+}
+
+.btn {
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    border: 2px solid #fff!important;
+    background-color: transparent!important;
+    color: #fff!important;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    padding: 0.84rem 2.14rem;
+    font-size: .81rem;
+    margin: 0.375rem;
+    border-radius: 0.125rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    white-space: normal;
+    font-size: 11px;
+    word-wrap: break-word;
+    /* margin-right: 60px; */
+}
+
+.animated {
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+}

@@ -11,6 +11,7 @@ import { RouterModule } from '@angular/router';
 import { HomePageComponent } from 'src/app/home-page/home-page.component';
 import { DataTableComponent } from './data-table/data-table.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { NavbarComponent } from './navbar/navbar.component';
     FormsModule,
     ReactiveFormsModule,
     AgGridModule,
+    FontAwesomeModule
   ],
   // exports: [RouterModule],
   providers: [],

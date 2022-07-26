@@ -1,10 +1,17 @@
-<div class="m-4">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid" style="background-color: rgba(112, 112, 200, 0.574);height: 60px;top:0px;margin-bottom:60px;">
-            <a routerLink="/home-page" class="navbar-brand" style="font-size: xx-large;font-weight: 700;color: #5656cd;" (click)="onHomeClick()">Account Detail Tab</a>
-            <!-- <a href="About" class="navbar-brand" style="float: right;margin-right: 20px;color: white;font-style: normal;">Contact</a> -->
-            <a routerLink="/data-table" class="navbar-brand" style="float: right;margin-right: 20px;color: white;font-style: normal;" (click)="onBtnClick()">Accounts</a>
-        </div>
-    </nav>
-    <router-outlet></router-outlet>
-</div>
+<body>
+    <div class="m-4">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid" style="background-color: rgba(79, 79, 84, 0.574);height: 60px;">
+                <img class="logo" src="/assets/logo-removebg-preview.png" alt="">
+                <a routerLink="/home-page" class="navbar-brand" (click)="onHomeClick()">IPL</a>
+                <a class="profile">
+                    <img src="src/assets/profileimage.jpg" alt="">
+                </a>
+                <!-- <a href="About" class="navbar-brand" style="float: right;margin-right: 20px;color: white;font-style: normal;">Contact</a> -->
+                <a routerLink="/data-table" class="navbar-links" (click)="onBtnClick()">Accounts</a>
+
+            </div>
+        </nav>
+        <router-outlet></router-outlet>
+    </div>
+</body>

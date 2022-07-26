@@ -1,0 +1,45 @@
+/* body {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+} */
+
+.navbar {
+    /* font-family: 'Roboto'; */
+    background: transparent;
+    background-color: rgb(247 247 247 / 27%);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+}
+
+.navbar-brand {
+    letter-spacing: 2px;
+    color: #00006e;
+    font-size: 30px;
+    /* font-weight: 700; */
+    /* color: #1a1c1d;/ */
+    padding-left: 50px;
+    text-shadow: 1px 1px 2px #a8a4a4;
+    font-weight: 700;
+}
+
+.logo {
+    height: 55px;
+    width: 55px;
+    float: left;
+}
+
+.navbar-links {
+    float: right;
+    margin-right: 20px;
+    color: #00006e;
+    font-style: normal;
+    font-size: 15px;
+    letter-spacing: -0.5px;
+    font-family: 'Roboto';
+    padding-top: 14px;
+    font-weight: 505;
+}
+
+.profile {
+    float: right;
+    height: 30px;
+    width: 30px;
+}
