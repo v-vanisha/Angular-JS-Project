@@ -2,7 +2,7 @@
 #bgimg {
     height: 100vh;
     color: #fff;
-    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.5)), url("src/assets/IPL-Trophy.webp");
+    background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.5)), url("src/assets/IPL-Trophy.webp");
     background-size: cover;
     width: 100%;
     margin-top: -21px;

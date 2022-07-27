@@ -2,3 +2,32 @@ body {
     overflow-x: hidden;
     margin-top: 70px;
 }
+
+
+/* You can add global styles to this file, and also import other style files */
+
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import 'ag-grid-community/dist/styles/ag-grid.css';
+@import 'ag-grid-community/dist/styles/ag-theme-alpine.css';
+#outer {
+    width: 100%;
+    text-align: center;
+    color: white;
+    height: 40px;
+    /* width: 80px; */
+    font-style: normal;
+}
+
+.inner {
+    display: inline-block;
+    margin: 1%;
+    background-color: #0c7fdc;
+    display: inline-block;
+    margin: 1%;
+    font-size: 18px;
+}
+
+#outer-close {
+    width: 100%;
+    text-align: center;
+}
