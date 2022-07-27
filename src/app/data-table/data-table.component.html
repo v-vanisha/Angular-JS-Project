@@ -305,7 +305,7 @@
     <!--datatable-->
     <div class="tableCenter">
         <div class="datatable" style="display: flex;justify-content: center;">
-            <ag-grid-angular style="width: 700px; height: 400px;" class="ag-theme-alpine" [rowData]="myData" [columnDefs]="colDefs" [defaultColDef]="defaultColDef" [pagination]="true" [paginationAutoPageSize]="true" (gridReady)="onGridReady($event)" (selectionChanged)="onSelectionChanged($event)"
+            <ag-grid-angular style="width: 700px; height: 400px;" class="ag-theme-alpine" [rowData]="publicApiData" [columnDefs]="colDefs" [defaultColDef]="defaultColDef" [pagination]="true" [paginationAutoPageSize]="true" (gridReady)="onGridReady($event)" (selectionChanged)="onSelectionChanged($event)"
                 [rowSelection]="rowSelection">
             </ag-grid-angular>
         </div>

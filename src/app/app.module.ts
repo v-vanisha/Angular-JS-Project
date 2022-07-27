@@ -12,6 +12,7 @@ import { HomePageComponent } from 'src/app/home-page/home-page.component';
 import { DataTableComponent } from './data-table/data-table.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
     FormsModule,
     ReactiveFormsModule,
     AgGridModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    HttpClientModule
   ],
   // exports: [RouterModule],
   providers: [],

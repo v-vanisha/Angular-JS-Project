@@ -5,6 +5,7 @@ import { ColDef } from 'ag-grid-community';
 import { setAriaColCount } from 'ag-grid-community/dist/lib/utils/aria';
 import { account } from 'src/app/models/account';
 import { Router,ActivatedRoute } from '@angular/router';
+import {GetApiService} from "src/app/get-api.service";
 
 @Component({
   selector: 'app-data-table',
@@ -13,7 +14,7 @@ import { Router,ActivatedRoute } from '@angular/router';
 })
 export class DataTableComponent implements OnInit{
 
-  constructor(private router:Router){}
+  constructor(private router:Router,private DataService:GetApiService){}
 
   public gridApi:any;
   public rowSelection = 'single';
@@ -25,23 +26,26 @@ export class DataTableComponent implements OnInit{
   public inputname:string="";
   public inputaccn:string="";
   public inputbal:string="";
+  publicApiData:any =null;
 
 
   ngOnInit(): void {
       let griddata = JSON.parse(localStorage.getItem("testdata"));
       if(!!griddata && griddata.length>0)
-        this.myData = griddata;
-      else{
+      {
+        // this.myData = griddata;
+        this.DataService.apiCall().subscribe(data => this.publicApiData = data );
+      }
+        else{
         localStorage.setItem("testdata",JSON.stringify(this.rowData));
-        this.myData = this.rowData
+        this.myData = this.rowData 
       }
       
   }
 
   colDefs: ColDef[] = [
-    {field:'Name'},
-    {field:'AccountNumber'},
-    {field:'Balance'}
+    {field:'nome'},
+    {field:'codigo'}
   ];
 defaultColDef: ColDef={
   sortable:true,filter:true
